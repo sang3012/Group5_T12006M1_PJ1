@@ -64,7 +64,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="../index.html" style="font-size: x-large;">Home</a>
                         </li>
                         <li class="nav-item">
@@ -80,13 +80,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="service.html" style="font-size: x-large;">Service </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact_us.html" style="font-size: x-large;">Contact us </a>
                         </li>
     
                         <li class="nav-item">
                         <a href="sign_in.html" class="nav-link" style="font-size: x-large;">
-                           Sign In
+                           Sign Up
                         </a>
                         </li>
                         <li class="nav-item">
@@ -102,13 +102,19 @@
     </header>
 
     <main>
+        <script>
+            function showInfo()
+            {
+                alert("Thank you for cooperating with us");
+            }
+        </script>
         <div class="contact">
 			<div class="container">
 				<h3>Contact</h3>
 				
 				<div class="contact-grids">
 					<div class="contact-form">
-							<form action="#" method="post">
+							<form onsubmit="showInfo()" >
 								<div class="contact-bottom">
 									<div class="col-md-4 in-contact">
 										<span>Name</span>

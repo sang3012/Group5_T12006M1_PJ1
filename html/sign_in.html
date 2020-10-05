@@ -51,6 +51,12 @@
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/product_perfect.css">
     <link rel="stylesheet" href="../css/footer_css.css">
+    <script>
+        function showInfo()
+        {
+            alert("You have successfully registered");
+        }
+    </script>
  
 <body>
 <div class="container-fluid">
@@ -65,7 +71,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="../index.html" style="font-size: x-large;">Home</a>
                         </li>
                         <li class="nav-item">
@@ -85,9 +91,9 @@
                             <a class="nav-link" href="contact_us.html" style="font-size: x-large;">Contact us </a>
                         </li>
     
-                        <li class="nav-item">
+                        <li class="nav-item active">
                         <a href="sign_in.html" class="nav-link" style="font-size: x-large;">
-                           Sign In
+                           Sign Up
                         </a>
                         </li>
                         <li class="nav-item">
@@ -103,26 +109,25 @@
     </header>
     <div class="account">
         <div class="container">
-            <h2>Sign In</h2>
+            <h2>Sign Up</h2>
             <div class="account_grid">
                    <div class="col-md-12 login-right" >
-                    <form action="#" method="post">
+                    <form  onsubmit="showInfo()" >
     
                         <span>Full Name</span>
-                        <input type="text" name="email"  style="text-align: center;">
+                        <input type="text" name="email" required>
                         <span>Phone Number</span>
-                        <input type="text" name="email">
+                        <input type="text" name="email" required>
                         <span>Email Address</span>
-                        <input type="text" name="email">
+                        <input type="text" name="email" required>
                         <span>Name Account</span>
-                        <input type="text" name="email"> 
+                        <input type="text" name="email" required> 
                     
                         <span>Password</span>
-                        <input type="password" name="password"> 
-                        <div class="word-in">
-                              <a href="#">
-                              <input type="submit" value="Create Account">
-                          </div>
+                        <input type="password" name="password" required>  
+                         
+                              <input type="submit" value="Create Account" > 
+                           
                     </form>
                    </div>	
                    
